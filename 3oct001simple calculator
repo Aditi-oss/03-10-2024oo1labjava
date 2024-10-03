@@ -1,0 +1,40 @@
+//write a program simple calculator in java using sop statements I using the switch case .
+import java.util.Scanner;
+
+public class lab002 {
+public static void main(String[]args)
+{
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the first and Second number ");
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    System.out.println("choose the operator which you want to calculate +,*,/,-");
+    char op=sc.next().charAt(0);
+    int o=0;
+    switch(op)
+    {
+        case '+':
+        o=a+b;
+        break;
+        //substr;action
+        case '-':
+            o=a-b;
+            break;
+         //multipication
+        case'*':
+            o=a*b;
+break;
+            //division
+        case'/':
+            o=a/b;
+            break;
+        default:
+            System.out.println("wrong input");
+
+    }
+    System.out.println("the final result");
+    System.out.println();
+    System.out.println(a+" "+b+" "+" is equal to  "+o);
+
+}
+}
